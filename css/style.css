@@ -128,6 +128,18 @@ nav a:hover {
   object-fit: cover;
 }
 
+img {
+  max-width: 100%;  /* image won't exceed container width */
+  height: auto;     /* maintains aspect ratio */
+  display: block;   /* removes small gaps below images */
+}
+.screenshot-container {
+  width: 100%;      /* container takes full width */
+  max-width: 600px; /* optional: limits how big it gets on desktop */
+  margin: 0 auto;   /* centers it horizontally */
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   nav {
@@ -138,3 +150,4 @@ nav a:hover {
     display: flex;
   }
 }
+
